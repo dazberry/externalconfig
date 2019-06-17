@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace ExternalConfiguration.Web.Api.Controllers
 {
@@ -17,7 +13,7 @@ namespace ExternalConfiguration.Web.Api.Controllers
 
         // POST api/values
         [HttpPost()]
-        public IActionResult Get([FromQuery] KeyRequest keyRequest)
+        public IActionResult Get([FromBody] KeyRequest keyRequest)
         {
             var cfg = new
             {

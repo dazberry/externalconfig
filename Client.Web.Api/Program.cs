@@ -26,7 +26,7 @@ namespace Client.Web.Api
                 .UseExternalConfiguration(
                     HttpMethod.Post,
                     new Uri("https://localhost:44308/api/configuration"),
-                    new { key = config["configurationKey"] },
+                    new { key = configurationKey },
                     "application/json")
                 .UseStartup<Startup>();
         }

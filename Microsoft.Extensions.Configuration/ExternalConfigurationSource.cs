@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Microsoft.Extensions.Configuration.External
+﻿namespace Microsoft.Extensions.Configuration.External
 {
     public class ExternalConfigurationSource : IConfigurationSource
     {
